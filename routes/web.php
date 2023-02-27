@@ -31,3 +31,4 @@ Route::post('/add-news', [AddController::class, 'addNews'])->name('add-news-acti
 Route::get('/categories', [AddController::class, 'getCategory'])->name('categories');
 Route::get('/scanner', [QrCodeController::class, 'index'])->name('scanner');
 Route::get('/custom-scanner', [QrCodeController::class, 'customView'])->name('custom-scanner');
+Route::get('/scan-result', [QrCodeController::class, 'showScanSuccess'])->name('qr-result');

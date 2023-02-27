@@ -11,6 +11,7 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/js/scanner.js",
                 "resources/js/custom-scanner.js",
+                "resources/js/scan-result.js",
             ],
             refresh: true,
         }),
