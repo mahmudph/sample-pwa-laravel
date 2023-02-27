@@ -38,13 +38,17 @@
             </div>
             <div class="btn-content">
                 <div class="d-grid gap-2 d-block p-4">
-                    <button class="btn btn-primary btn-sm btn-block p-2" id="start">Start</button>
+                    <div class="d-flex justify-content-center align-content-center">
+                        <div class="col-10 col-md-3">
+                            <button class="btn btn-primary btn-sm btn-block p-2 w-100" id="start">Start</button>
+                        </div>
+                    </div>
                     <div class="container d-none" id="btn-action">
                         <div class="row">
-                            <div class="col-6 col-sm-6">
+                            <div class="col-6 col-md-6">
                                 <button class="btn btn-danger btn-sm btn-block p-2 w-100" id="stop">Stop</button>
                             </div>
-                            <div class="col-6 col-sm-6">
+                            <div class="col-6 col-md-6">
                                 <button class="btn btn-info btn-sm btn-block p-2 w-100" id="upload">Select File</button>
                             </div>
                         </div>

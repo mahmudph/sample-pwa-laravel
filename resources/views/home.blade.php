@@ -60,7 +60,7 @@
 @endsection
 
 @push('js')
-    <script>
+    <script type="module">
         $(document).ready(function() {
             $('#datatable').DataTable();
         })

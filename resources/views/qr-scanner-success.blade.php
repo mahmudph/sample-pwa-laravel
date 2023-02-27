@@ -35,7 +35,11 @@
                             suscipit debitis amet necessitatibus.</p>
                     </div>
                     <div class="p-2">
-                        <button class="p-2 btn btn-sm btn-danger w-100 text-center" id="reset">Ulangi</button>
+                        <div class="d-flex justify-content-center align-content-center">
+                            <div class="col-10 col-md-3">
+                                <button class="p-2 btn btn-sm btn-danger w-100 text-center" id="reset">Ulangi</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

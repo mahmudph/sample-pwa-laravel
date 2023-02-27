@@ -80,7 +80,7 @@
 
 
 @push('js')
-    <script>
+    <script type="module">
         $(document).ready(function() {
             $.ajax({
                 url: "{{ route('categories') }}",
