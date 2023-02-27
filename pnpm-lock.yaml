@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '-': ^0.0.1
-  '@fortawesome/fontawesome-free': 5.1.0-9
   '@popperjs/core': ^2.11.6
   axios: ^1.1.2
   boostrap: ^2.0.0
   bootstrap: ^5.2.3
   datatables.net: ^1.13.2
   datatables.net-bs5: ^1.13.2
+  font-awesome: ^4.7.0
   html5-qrcode: ^2.3.7
   jquery: ^3.6.3
   laravel-vite-plugin: ^0.7.2
@@ -33,13 +33,13 @@ dependencies:
   workbox-precaching: 6.5.4
 
 devDependencies:
-  '@fortawesome/fontawesome-free': 5.1.0-9
   '@popperjs/core': 2.11.6
   axios: 1.3.2
   boostrap: 2.0.0
   bootstrap: 5.2.3_@popperjs+core@2.11.6
   datatables.net: 1.13.2
   datatables.net-bs5: 1.13.2
+  font-awesome: 4.7.0
   html5-qrcode: 2.3.7
   jquery: 3.6.3
   laravel-vite-plugin: 0.7.4_vite@4.1.1
@@ -1421,11 +1421,6 @@ packages:
     dev: true
     optional: true
 
-  /@fortawesome/fontawesome-free/5.1.0-9:
-    resolution: {integrity: sha512-F5Iz5k+Jj5+YDLcFb4pskOmKncsq3Y/ez6eCCCneLpcredQJd1uqTGC/WK5cYOS/h+c/6N4zj1YI5saDgOVaRg==}
-    engines: {node: '>=6'}
-    dev: true
-
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
     engines: {node: '>=6.0.0'}
@@ -2055,6 +2050,11 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dev: true
+
+  /font-awesome/4.7.0:
+    resolution: {integrity: sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==}
+    engines: {node: '>=0.10.3'}
     dev: true
 
   /for-each/0.3.3:
