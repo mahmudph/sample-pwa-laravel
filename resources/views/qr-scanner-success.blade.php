@@ -27,7 +27,8 @@
                         <i class="fa fa-check-circle" style="font-size:58px"></i>
                         <h3>Scan Qr Code Result</h3>
                         <h6 id="result"></h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo atque optio,
+                        <p class="col-md-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo atque
+                            optio,
                             ab ad
                             expedita officia
                             modi nesciunt placeat voluptatibus officiis nulla inventore. Cupiditate, perferendis!

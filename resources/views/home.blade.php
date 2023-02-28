@@ -10,16 +10,6 @@
                             {!! \Session::get('success') !!}
                         </div>
                     @endif
-                    <div class="card-header d-flex justify-content-between align-items-end">
-                        <h1>Data News </h1>
-                        <div class="float-right col-md-6">
-                            <a href="{{ route('add-news') }}" class="btn btn-sm btn-primary ">Add News With ajax</a>
-                            <a href="{{ route('add-news-no-ajax') }}" class="btn btn-sm btn-info">Add News Without ajax</a>
-                            <a href="{{ route('scanner') }}" class="btn btn-sm btn-secondary">Scan Qr Code</a>
-                            <a href="{{ route('custom-scanner') }}" class="btn btn-sm btn-primary">Scan With Custom QR</a>
-                        </div>
-
-                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-stiped table-hovered" id="datatable">

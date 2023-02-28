@@ -27,7 +27,9 @@
                     <div class="d-flex justify-content-center align-content-center flex-column p-3 text-center">
                         <i class="fa fa-10x fa-qrcode" style="font-size: 58px;"></i>
                         <h3>Scan Qr Code</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo atque optio,
+                        <p class="col-md-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                            nemo atque
+                            optio,
                             ab ad
                             expedita officia
                             modi nesciunt placeat voluptatibus officiis nulla inventore. Cupiditate, perferendis!

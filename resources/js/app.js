@@ -3,7 +3,7 @@ import "./registerSW";
 import Jquery from "jquery";
 import dt from "datatables.net";
 import selet2 from "select2";
-
+import "datatables.net-bs5";
 import "bootstrap";
 
 window.$ = Jquery;
