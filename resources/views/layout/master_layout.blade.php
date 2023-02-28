@@ -20,7 +20,13 @@
 </head>
 
 <body>
-    @yield('content')
+    @php
+        $title = 'makanm malam';
+    @endphp
+    <x-navbar :title="config('app.name')" />
+    <div class="container-fluid mt-2">
+        @yield('content')
+    </div>
 </body>
 
 @stack('js')
