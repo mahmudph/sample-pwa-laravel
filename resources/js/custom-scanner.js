@@ -61,7 +61,6 @@ const showScanSuccess = (html5QrCode) => {
         allowOutsideClick: false,
     }).then((res) => {
         if (res.isConfirmed) {
-            // stopQrScanner(html5QrCode);
             window.location.href = "/scan-result";
         }
     });

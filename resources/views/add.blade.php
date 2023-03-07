@@ -14,7 +14,8 @@
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input type="text" name="title" id="" value="{{ old('title') }}"
-                                    placeholder="insert title" class="form-control @error('title') 'is-invalid' @enderror">
+                                    placeholder="insert title" class="form-control @error('title')
+                                    'is-invalid' @enderror">
                                 @error('title')
                                     <div class="invalid-feedback">
                                         {{ $message }}

@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 
 class QrCodeController extends Controller
 {
-    public function index() {
-        return view('qr-scanner');
+    public function index()
+    {
+        $category = Category::all();
+        return view('qr-scanner', compact('category'));
     }
 
-    public function customView() {
+    public function customView()
+    {
         return view('custom-qr-scanner');
     }
 

@@ -20,7 +20,8 @@ const statusPlugin = {
 };
 
 registerRoute(
-    ({ url }) => url.pathname == "/add-news",
+    ({ url }) =>
+        url.pathname == "/add-news" || url.pathname == "/api/master/create",
     new NetworkOnly({
         cacheName: "data-cache",
         plugins: [
