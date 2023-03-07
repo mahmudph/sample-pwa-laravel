@@ -17,12 +17,7 @@
 
                 <form method="post" id="form">
                     @csrf
-                    <div class="form-group">
-                        <div id="render"></div>
-                        <select name="camera_id" id="cameras" class="form-control">
-                            <option value="">Select Camera</option>
-                        </select>
-                    </div>
+                    <x-qr-scanner />
 
                     <div class="form-group pt-2 pb-2" id="form-content">
                         <label for="title">Title</label>
