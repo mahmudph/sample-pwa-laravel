@@ -17,7 +17,8 @@ class QrCodeController extends Controller
         return view('custom-qr-scanner');
     }
 
-    public function showScanSuccess() {
+    public function showScanSuccess()
+    {
         return view('qr-scanner-success');
     }
 }
