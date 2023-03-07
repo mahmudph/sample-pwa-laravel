@@ -96,7 +96,10 @@ export default class QrScannerHandler {
                  * when qr code is alredy running then
                  * stop the session then start with new sessions
                  */
-                if (this.#htmlQrCode.isScanning) await this.#htmlQrCode.stop();
+                if (this.#htmlQrCode.isScanning) {
+                    $(".center-qr-scanner-logo").remove();
+                    await this.#htmlQrCode.stop();
+                }
 
                 let facingSelectedId = { deviceId: selectedCameraId };
                 this.#startQrScanner(facingSelectedId, this.#qrConfiguration);
