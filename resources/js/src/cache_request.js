@@ -74,13 +74,10 @@ const FALLBACK_HTML_URL = "/offline-fallback.html";
 setDefaultHandler(new NetworkOnly());
 
 setCatchHandler(({ event }) => {
-    switch (event.request.destination) {
-        case "document":
-            console.log("im hereeee");
-            return caches.match(FALLBACK_HTML_URL);
-        default:
-            console.log(event.request.destination, "im heree default error");
-            // return caches.match(FALLBACK_HTML_URL);
-            throw new Error("hohohohohoo");
+    if (event.request.destination == "document") {
+        console.log("im hereeee");
+        return caches.match(FALLBACK_HTML_URL);
+    } else {
+        console.log(event.request.destination);
     }
 });
