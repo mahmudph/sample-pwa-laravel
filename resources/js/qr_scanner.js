@@ -48,6 +48,12 @@ export default class QrScannerHandler {
         this.#eventListener = cb;
     };
 
+    stopCamera = async () => {
+        await this.#htmlQrCode.stop();
+        $(".center-qr-scanner-logo").remove();
+        $("#camera").val("").trigger("change");
+    };
+
     /**
      * start process qr scanner
      * this will get the available camera on the device then

@@ -40,6 +40,10 @@ $(function () {
         qrScannerHanlder.getAvailableCameraAndBindToHtml();
     });
 
+    $("#stop").on("click", function () {
+        qrScannerHanlder.stopCamera();
+    });
+
     $("#form").on("submit", function (e) {
         e.preventDefault();
         console.log($(this).serialize());
