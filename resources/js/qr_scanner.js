@@ -49,9 +49,11 @@ export default class QrScannerHandler {
     };
 
     stopCamera = async () => {
-        await this.#htmlQrCode.stop();
-        $(".center-qr-scanner-logo").remove();
-        $("#camera").val("").trigger("change");
+        if (this.#htmlQrCode.isScanning) {
+            await this.#htmlQrCode.stop();
+            $(".center-qr-scanner-logo").remove();
+            $("#camera").val("").trigger("change");
+        }
     };
 
     /**
